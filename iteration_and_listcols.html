@@ -837,6 +837,8 @@ dynamite_reviews &lt;-
   unnest()</code></pre>
 <pre><code>## Warning: `cols` is now required when using unnest().
 ## Please use `cols = c(reviews)`</code></pre>
+<pre class="r"><code>dynamite_reviews &lt;- dynamite_reviews %&gt;% 
+  select(-page)</code></pre>
 </div>
 
 

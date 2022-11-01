@@ -278,5 +278,7 @@ dynamite_reviews <-
   mutate(reviews = map(urls, read_page_reviews)) %>% 
   unnest()
 
+dynamite_reviews <- dynamite_reviews %>% 
+  select(-page)
 ```
 
